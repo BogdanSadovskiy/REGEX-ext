@@ -9,7 +9,7 @@ class programm
         Exersice exersice = new Exersice();
         Console.WriteLine("Is Email valid ------------ 1");
         Console.WriteLine("Is Ukrainian number valid - 2");
-
+        Console.WriteLine("Is Password valid --------- 3");
         string menu = Console.ReadLine();
         int menu_= 0;
         try
@@ -24,6 +24,10 @@ class programm
         else if (menu_ == 2)
         {
             exersice.IsUkrainianNumberValid();
+        }
+        else if(menu_==3)
+        {
+            exersice.IsPassWordValid();
         }
 
     }
